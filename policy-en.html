@@ -1,134 +1,62 @@
+
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>VocalX — Privacy Policy</title>
-<style>
-  :root {
-    --bg: #fdf7f3;
-    --card: #ffffff;
-    --text: #1e1a26;
-    --muted: #5d5568;
-    --peach: #ff9a76;
-    --purple: #7b5ea7;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.65;
-  }
-  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 22px 72px; }
-  header { padding-bottom: 22px; border-bottom: 1px solid rgba(123, 94, 167, 0.18); margin-bottom: 30px; }
-  .brand { font-size: 30px; font-weight: 700; letter-spacing: -0.3px; margin: 0; }
-  .brand span {
-    background: linear-gradient(90deg, var(--peach), var(--purple));
-    -webkit-background-clip: text; background-clip: text; color: transparent;
-  }
-  .sub { color: var(--muted); margin: 6px 0 0; font-size: 15px; }
-  .lang { margin-top: 14px; font-size: 14px; }
-  .lang a { color: var(--purple); text-decoration: none; font-weight: 600; }
-  h2 { font-size: 18px; margin: 34px 0 8px; }
-  p, li { color: var(--text); font-size: 15.5px; }
-  p { margin: 0 0 12px; }
-  ul { margin: 0 0 12px; padding-inline-start: 22px; }
-  li { margin-bottom: 6px; }
-  .card {
-    background: var(--card); border-radius: 16px; padding: 18px 20px;
-    border: 1px solid rgba(123, 94, 167, 0.12); margin: 22px 0;
-  }
-  .card p:last-child { margin-bottom: 0; }
-  .muted { color: var(--muted); font-size: 14px; }
-  a { color: var(--purple); }
-  footer { margin-top: 46px; padding-top: 18px; border-top: 1px solid rgba(123, 94, 167, 0.18); }
-  code { background: rgba(123, 94, 167, 0.08); padding: 1px 5px; border-radius: 5px; font-size: 14px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VocalX Privacy Policy. Learn how VocalX handles audio files, device permissions, model downloads and advertising data.">
+  <title>VocalX Privacy Policy</title>
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <h1 class="brand"><span>VocalX</span></h1>
-    <p class="sub">Privacy Policy · by Ali-Alinejad</p>
-    <p class="sub">Last updated: 21 November 2026 · Applies to version 1.0.0</p>
-    <p class="lang"><a href="policy-fa.html" hreflang="fa" lang="fa">خواندن این سیاست به فارسی</a></p>
-  </header>
 
-  <div class="card">
-    <p><strong>The short version.</strong> VocalX separates a song into an instrumental and a vocal track entirely on your phone. Your audio is never uploaded, there is no account, and the app contains no analytics or crash-reporting service. The only network requests the app makes are the one-time download of the separation model during first-run setup and the advertisements described in section 5.</p>
-  </div>
+  <h1>VocalX Privacy Policy</h1>
+  <p>Last updated: November 23, 2026</p>
 
   <h2>1. Who we are</h2>
-  <p>VocalX is an offline audio-separation app for Android, developed by <strong>Ali-Alinejad</strong> (“we”, “the developer”). It is distributed through Cafe Bazaar, Myket and Google Play. You can reach the developer through the contact details on the store listing of the app you installed.</p>
+  <p>VocalX is an offline audio-separation app for Android, developed by <strong>Ali-Alinejad</strong> (“we”, “the developer”). It is distributed through Cafe Bazaar, Myket and Google Play.</p>
+  <p>For privacy questions or requests, contact us at: <a href="mailto:alialinejad72@gmail.com">alialinejad72@gmail.com</a>.</p>
 
-  <h2>2. Audio files you choose</h2>
-  <p>You select an audio file with Android’s system file picker. VocalX receives read access to that single file only, and reads it solely to perform the separation you asked for. Decoded audio is written to temporary files in the app’s private cache and deleted when processing finishes, is cancelled, or fails. The finished instrumental and vocal tracks are saved in the app’s private storage so you can play them and export them where you choose.</p>
-  <p>Audio, file names, and the contents of your library are never transmitted anywhere.</p>
+  <h2>2. Audio files and processing</h2>
+  <p>VocalX processes audio files locally on your device. Your selected audio files are not uploaded to our servers.</p>
+  <p>The app uses the file picker to access the audio file that you select. It does not need access to all files on your device.</p>
+  <p>Audio data decoded for processing is temporary. The app removes temporary processing data after the task is complete.</p>
 
-  <h2>3. What is stored on your phone</h2>
-  <ul>
-    <li>The separation model (about 67 MB), in the app’s private internal storage, so the app can work offline after setup.</li>
-    <li>Your most recent results — up to 10 tracks, limited to about 700 MB in total — in the app’s private storage. Older results are removed automatically.</li>
-    <li>Your language and appearance choices.</li>
-  </ul>
-  <p>Android backup is disabled for VocalX (<code>allowBackup="false"</code>), so none of this is copied to a cloud backup. This data is removed when you uninstall the app or clear its data, and results can be deleted at any time from Settings.</p>
+  <h2>3. Output files</h2>
+  <p>Separated audio tracks are stored on your device. These files remain private to your device unless you choose to share them.</p>
 
-  <h2>4. Network access</h2>
-  <p>During first-run setup, VocalX downloads the separation model over HTTPS from its official public source (Hugging Face) or from a mirror serving the same file, and accepts it only if its SHA-256 digest matches the published value. As with any download, the server necessarily sees your IP address and the app’s user agent (<code>VocalX/1.0 (Android)</code>). No audio, file name, result or usage history is included in, or sent alongside, that request.</p>
-  <p>The other network use is advertising, described in section 5. After setup, separation, playback and export work entirely offline.</p>
+  <h2>4. AI model</h2>
+  <p>VocalX downloads its audio-separation model over HTTPS when required. The model is stored locally on your device and is used for offline processing.</p>
+  <p>When you download the model, the hosting provider may receive technical information such as your IP address and browser or device user-agent information.</p>
 
-  <h2>5. Advertising (Tapsell)</h2>
-  <p>VocalX includes the <strong>Tapsell Mobile Ads SDK (Mediation)</strong> in its Bazaar, Myket and Google Play builds, and the SDK is initialized at startup.</p>
-  <p>VocalX shows one standard banner advertisement on the Home screen and one on the processing screen, requested through the single Standard Banner Zone configured for the store build you installed. No interstitial, rewarded or other ad format is used. Ads are requested only while the app is open — including while a separation continues in the background — and they never receive your audio or file names.</p>
-  <p>To request, display and measure those ads, Tapsell may collect and process:</p>
-  <ul>
-    <li>the Google Advertising ID (or its deletion/reset state),</li>
-    <li>device model, operating-system version, language, screen size and carrier,</li>
-    <li>IP address and coarse location derived from it,</li>
-    <li>the app package name, and ad impression and click events.</li>
-  </ul>
-  <p>Tapsell may share this data with the ad networks it mediates for, and processes it on servers located in Iran. It is used for advertising, ad measurement and fraud prevention — never for anything related to your audio. You can limit ad personalization or reset/delete your advertising ID in Android Settings → Privacy → Ads. Tapsell’s own policy is published at <a href="https://developer.tapsell.ir/docs/sdk/policies/privacy-policy" rel="noopener">developer.tapsell.ir/docs/sdk/policies/privacy-policy</a>.</p>
+  <h2>5. Recent results and storage</h2>
+  <p>VocalX keeps up to 10 recent tracks, subject to a storage limit of 700 MB. Older results may be removed automatically when these limits are reached.</p>
+  <p>VocalX does not include Android cloud backup for its app data.</p>
 
-  <h2>6. Permissions and why they exist</h2>
-  <ul>
-    <li><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code> — the one-time model download, its retry handling, and ad delivery.</li>
-    <li><code>ACCESS_WIFI_STATE</code>, <code>CHANGE_WIFI_STATE</code> — declared by the Tapsell SDK for ad refresh; VocalX itself never changes your Wi-Fi state.</li>
-    <li><code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_DATA_SYNC</code> — so a separation keeps running when you leave the app.</li>
-    <li><code>POST_NOTIFICATIONS</code> — the progress notification for that background job.</li>
-    <li><code>com.google.android.gms.permission.AD_ID</code> — because the Tapsell SDK is bundled and initialized, as Google requires when such an SDK is present.</li>
-    <li><code>RECEIVE_BOOT_COMPLETED</code>, <code>WAKE_LOCK</code> — declared by the Tapsell SDK so it can finish its scheduled ad work; they are not used for audio processing.</li>
-  </ul>
-  <p>VocalX does not request storage, microphone, camera, contacts or location permission. Files are opened through the system picker, which grants access to exactly the file you choose.</p>
+  <h2>6. Advertising</h2>
+  <p>VocalX uses the Tapsell advertising SDK to display ads. Tapsell and its advertising partners may process technical and advertising-related data to provide and measure ads.</p>
+  <p>This data may include your Google Advertising ID, device model, Android version, language, screen information, mobile carrier, IP address, approximate location, app package name, and ad impressions or clicks.</p>
+  <p>Tapsell may share relevant data with advertising partners and process data on servers located in Iran. Please review Tapsell's privacy policy for more information about its data practices.</p>
 
-  <h2>7. What VocalX never does</h2>
-  <ul>
-    <li>It never uploads your audio or your results.</li>
-    <li>It never asks for a name, email address, phone number or any account.</li>
-    <li>It never accesses your location, microphone, contacts, photos, calendar or other apps.</li>
-    <li>It contains no analytics, attribution or crash-reporting SDK, and sells no data.</li>
-    <li>It does not build a profile of you and does not track you across apps.</li>
-  </ul>
+  <h2>7. Permissions</h2>
+  <p>VocalX requests permissions that are needed for its features and for the advertising SDK. These may include network access, network-state information, wake locks, and other permissions required by the SDK.</p>
+  <p>Audio file access is limited to files that you select through the Android file picker.</p>
 
-  <h2>8. Children</h2>
-  <p>VocalX is a general-purpose audio tool and is not directed at children under 13. The advertising SDK treats all users as 13 or older, and the app is declared accordingly on Google Play.</p>
+  <h2>8. Analytics and crash reporting</h2>
+  <p>VocalX does not use a separate analytics or crash-reporting SDK.</p>
 
-  <h2>9. Keeping and deleting data</h2>
-  <p>Settings → “Delete all saved results” deletes every stored track immediately. Uninstalling the app, or clearing its data from Android settings, removes the model, the results and your preferences. Because nothing is stored on a server, there is no server-side copy to delete and no request to make.</p>
+  <h2>9. Children's privacy</h2>
+  <p>VocalX is not designed for children under the age of 13. We do not knowingly collect personal information from children.</p>
 
   <h2>10. Your choices and rights</h2>
-  <p>You can use VocalX without any network connection once setup is complete, delete results at any time, and reset your advertising ID in Android settings. If you have a question or a request about this policy or about data the developer might hold, contact the developer through the store listing. For data processed by Tapsell for advertising, please use the contact details in Tapsell’s policy.</p>
+  <p>You can use VocalX without a network connection once setup is complete, delete results at any time, and reset your advertising ID in Android settings.</p>
+  <p>For privacy questions or requests about data that the developer may hold, contact us at <a href="mailto:alialinejad72@gmail.com">alialinejad72@gmail.com</a>.</p>
+  <p>For data processed by Tapsell for advertising, please use the contact details provided in Tapsell's privacy policy.</p>
 
-  <h2>11. Security</h2>
-  <p>All app data lives in private internal storage that other apps cannot read. The model is downloaded over HTTPS and its SHA-256 digest is verified before it is used; a corrupted or tampered file is discarded rather than loaded.</p>
+  <h2>11. Data security and retention</h2>
+  <p>VocalX stores processing files and results locally on your device. You are responsible for protecting access to your device and any audio files that you export or share.</p>
 
   <h2>12. Changes to this policy</h2>
-  <p>If a future version changes what the app does — for example a new ad placement or a different advertising provider — this policy will be updated before that version is published, and the “last updated” date above will change. The current text is also available inside the app under Settings → Privacy.</p>
+  <p>We may update this Privacy Policy when the app or its data practices change. The latest version will be published on this page. Please review this page from time to time.</p>
 
-  <footer class="muted">
-    <p>VocalX · Privacy Policy · © 2026 Ali-Alinejad</p>
-  </footer>
-</div>
 </body>
 </html>
